@@ -92,7 +92,8 @@ body {
 
 /* Modern styling with smooth transitions and effects */
 .navbar {
-    background: rgba(0, 0, 0, 0.95) !important;
+    /* background: rgba(0, 0, 0, 0.95) !important; */
+    background-color: var(--color-background);
     backdrop-filter: blur(10px);
     padding: 0.8rem 0;
     transition: all 0.3s ease;
@@ -155,6 +156,80 @@ body {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Logo styling */
+.navbar-brand img {
+    transition: all 0.3s ease;
+    height: 40px; /* Adjust based on your logo */
+    width: auto;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+}
+
+/* Optional: If you want to add a gradient effect to the logo image */
+.logo-gradient {
+    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
+}
+
+/* Custom icon styling */
+.custom-icon {
+    width: 30px; /* Adjust based on your icon size */
+    height: 30px;
+    filter: brightness(0) invert(1); /* Makes icon white */
+    transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover .custom-icon {
+    transform: scale(1.1);
+}
+
+/* If your icons are already white, remove the filter */
+.custom-icon.no-filter {
+    filter: none;
+}
+
+/* For different icon sizes */
+.custom-icon.small {
+    width: 24px;
+    height: 24px;
+}
+
+.custom-icon.large {
+    width: 36px;
+    height: 36px;
+}
+
+/* For custom icon fonts */
+.icon-ai-ml,
+.icon-cloud,
+.icon-development,
+.icon-security {
+    font-family: sans-serif; 
+    font-size: 24px;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-icon {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .icon-wrapper {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 /* Section styling */
@@ -462,6 +537,8 @@ footer a:hover {
     transition: all 0.3s ease;
 }
 
+
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     h1 {
@@ -556,3 +633,4 @@ section {
 html {
     scroll-behavior: smooth;
 }
+
