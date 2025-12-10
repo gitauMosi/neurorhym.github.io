@@ -677,13 +677,3 @@ div[class*="icon-wrapper"] img {
     height: 30px !important;
 }
 
-/* 5. Debug rule - remove after fixing */
-.feature-card {
-    outline: 1px solid rgba(255, 0, 0, 0.3);
-}
-.icon-wrapper {
-    outline: 2px solid rgba(0, 255, 0, 0.5);
-}
-.icon-wrapper img {
-    outline: 1px solid rgba(0, 0, 255, 0.5);
-}
