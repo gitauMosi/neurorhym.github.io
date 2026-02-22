@@ -8,6 +8,37 @@ window.addEventListener('scroll', function() {
     }
 });
 
+function updateNavbarTheme() {
+    const navbar = document.querySelector('.navbar');
+    const themedSections = document.querySelectorAll('section[data-nav-theme]');
+    const navLogo = document.querySelector('.nav-logo');
+    if (!navbar || themedSections.length === 0) return;
+
+    let activeTheme = 'blue';
+    const probeY = window.scrollY + navbar.offsetHeight + 10;
+
+    themedSections.forEach(section => {
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
+        if (probeY >= top && probeY < bottom) {
+            activeTheme = section.dataset.navTheme || 'blue';
+        }
+    });
+
+    navbar.classList.remove('theme-blue', 'theme-orange', 'theme-dark');
+    navbar.classList.add(`theme-${activeTheme}`);
+
+    if (navLogo) {
+        const orangeLogo = navLogo.dataset.logoOrange;
+        const whiteLogo = navLogo.dataset.logoWhite;
+        if (activeTheme === 'orange' && whiteLogo) {
+            navLogo.src = whiteLogo;
+        } else if (orangeLogo) {
+            navLogo.src = orangeLogo;
+        }
+    }
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -67,3 +98,40 @@ document.querySelectorAll('.feature-card, .icon-wrapper').forEach(element => {
 // Check scroll on load and scroll
 window.addEventListener('load', checkScroll);
 window.addEventListener('scroll', checkScroll);
+
+window.addEventListener('load', updateNavbarTheme);
+window.addEventListener('scroll', updateNavbarTheme);
+window.addEventListener('resize', updateNavbarTheme);
+
+// Services accordion
+const serviceToggles = document.querySelectorAll('.service-toggle');
+
+serviceToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const panel = toggle.nextElementSibling;
+        const isOpen = toggle.classList.contains('is-open');
+
+        serviceToggles.forEach(otherToggle => {
+            otherToggle.classList.remove('is-open');
+            otherToggle.setAttribute('aria-expanded', 'false');
+            const otherPanel = otherToggle.nextElementSibling;
+            const otherIcon = otherToggle.querySelector('i');
+            otherPanel?.classList.remove('is-open');
+            if (otherIcon) {
+                otherIcon.classList.remove('bi-dash-lg');
+                otherIcon.classList.add('bi-plus-lg');
+            }
+        });
+
+        if (!isOpen) {
+            toggle.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            panel?.classList.add('is-open');
+            const icon = toggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('bi-plus-lg');
+                icon.classList.add('bi-dash-lg');
+            }
+        }
+    });
+});

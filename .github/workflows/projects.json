@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "title": "NeuroRhym AI Core",
+        "description": "The central nervous system of our AI solutions, processing millions of data points to deliver actionable insights in real-time.",
+        "detailedDescription": "A sophisticated AI engine built with cutting-edge machine learning algorithms, capable of processing and analyzing millions of data points in real-time. Features advanced neural networks, predictive analytics, and automated decision-making capabilities.",
+        "image": "assets/images/project1.jpg",
+        "category": "ai",
+        "tags": [
+            "AI",
+            "Python",
+            "TensorFlow"
+        ],
+        "technologies": [
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "Docker",
+            "Kubernetes"
+        ],
+        "metrics": {
+            "performance": "99.9% uptime",
+            "scale": "10M+ requests/day"
+        },
+        "link": "#",
+        "size": "large"
+    },
+    {
+        "id": 2,
+        "title": "SecureCloud Vault",
+        "description": "A military-grade encrypted cloud storage solution designed for enterprise data security and seamless accessibility.",
+        "detailedDescription": "Enterprise-grade cloud storage with military-level encryption, featuring zero-knowledge architecture, automated backup systems, and seamless integration with existing infrastructure. Compliant with SOC 2, GDPR, and HIPAA standards.",
+        "image": "assets/images/project2.jpg",
+        "category": "cloud",
+        "tags": [
+            "Cloud",
+            "Security",
+            "Go"
+        ],
+        "technologies": [
+            "Go",
+            "AWS",
+            "Terraform",
+            "Redis",
+            "PostgreSQL"
+        ],
+        "metrics": {
+            "security": "AES-256 encryption",
+            "storage": "Petabyte-scale"
+        },
+        "link": "#",
+        "size": "medium"
+    },
+    {
+        "id": 3,
+        "title": "RhymFlow Analytics",
+        "description": "Advanced analytics dashboard that visualizes complex business metrics with intuitive, interactive charts.",
+        "detailedDescription": "Real-time analytics platform with beautiful data visualizations, custom reporting, and predictive insights. Features drag-and-drop dashboard builder, automated alerts, and seamless data integration from multiple sources.",
+        "image": "assets/images/project3.jpg",
+        "category": "web",
+        "tags": [
+            "React",
+            "D3.js",
+            "Analytics"
+        ],
+        "technologies": [
+            "React",
+            "D3.js",
+            "Node.js",
+            "MongoDB",
+            "WebSocket"
+        ],
+        "metrics": {
+            "users": "50K+ active users",
+            "data": "Real-time processing"
+        },
+        "link": "#",
+        "size": "wide"
+    },
+    {
+        "id": 4,
+        "title": "VisionLink API",
+        "description": "Computer vision API enabling applications to identify objects, text, and faces with high precision.",
+        "detailedDescription": "State-of-the-art computer vision API powered by deep learning models. Supports object detection, facial recognition, OCR, image classification, and scene understanding with industry-leading accuracy.",
+        "image": "assets/images/project4.jpg",
+        "category": "ai",
+        "tags": [
+            "API",
+            "Computer Vision",
+            "Python"
+        ],
+        "technologies": [
+            "Python",
+            "OpenCV",
+            "YOLO",
+            "FastAPI",
+            "CUDA"
+        ],
+        "metrics": {
+            "accuracy": "98.5% detection rate",
+            "speed": "<100ms response"
+        },
+        "link": "#",
+        "size": "medium"
+    },
+    {
+        "id": 5,
+        "title": "Nexus CRM",
+        "description": "Next-generation Customer Relationship Management system integrated with AI predictive lead scoring.",
+        "detailedDescription": "Intelligent CRM platform with AI-powered lead scoring, automated workflows, and comprehensive customer insights. Features include email automation, sales pipeline management, and advanced reporting.",
+        "image": "assets/images/project5.jpg",
+        "category": "web",
+        "tags": [
+            "SaaS",
+            "Full Stack",
+            "Node.js"
+        ],
+        "technologies": [
+            "Node.js",
+            "React",
+            "PostgreSQL",
+            "Redis",
+            "Stripe"
+        ],
+        "metrics": {
+            "conversion": "+35% lead conversion",
+            "automation": "80% workflow automation"
+        },
+        "link": "#",
+        "size": "tall"
+    },
+    {
+        "id": 6,
+        "title": "CyberGuard Sentinel",
+        "description": "Autonomous threat detection system that proactively monitors network traffic for suspicious anomalies.",
+        "detailedDescription": "Advanced cybersecurity platform with real-time threat detection, automated response systems, and comprehensive network monitoring. Uses machine learning to identify and neutralize threats before they cause damage.",
+        "image": "assets/images/project6.jpg",
+        "category": "security",
+        "tags": [
+            "Cybersecurity",
+            "Rust",
+            "Networking"
+        ],
+        "technologies": [
+            "Rust",
+            "Wireshark",
+            "Snort",
+            "ELK Stack",
+            "Grafana"
+        ],
+        "metrics": {
+            "threats": "99.7% threat detection",
+            "response": "<5s incident response"
+        },
+        "link": "#",
+        "size": "medium"
+    }
+]
