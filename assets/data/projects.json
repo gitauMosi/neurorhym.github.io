@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "NeuroRhym AI Core",
+        "description": "The central nervous system of our AI solutions, processing millions of data points to deliver actionable insights in real-time.",
+        "image": "assets/images/project1.jpg",
+        "tags": [
+            "AI",
+            "Python",
+            "TensorFlow"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "SecureCloud Vault",
+        "description": "A military-grade encrypted cloud storage solution designed for enterprise data security and seamless accessibility.",
+        "image": "assets/images/project2.jpg",
+        "tags": [
+            "Cloud",
+            "Security",
+            "Go"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "title": "RhymFlow Analytics",
+        "description": "Advanced analytics dashboard that visualizes complex business metrics with intuitive, interactive charts.",
+        "image": "assets/images/project3.jpg",
+        "tags": [
+            "React",
+            "D3.js",
+            "Analytics"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "title": "VisionLink API",
+        "description": "Computer vision API enabling applications to identify objects, text, and faces with high precision.",
+        "image": "assets/images/project4.jpg",
+        "tags": [
+            "API",
+            "Computer Vision",
+            "Python"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "title": "Nexus CRM",
+        "description": "Next-generation Customer Relationship Management system integrated with AI predictive lead scoring.",
+        "image": "assets/images/project5.jpg",
+        "tags": [
+            "SaaS",
+            "Full Stack",
+            "Node.js"
+        ],
+        "link": "#"
+    },
+    {
+        "id": 6,
+        "title": "CyberGuard Sentinel",
+        "description": "Autonomous threat detection system that proactively monitors network traffic for suspicious anomalies.",
+        "image": "assets/images/project6.jpg",
+        "tags": [
+            "Cybersecurity",
+            "Rust",
+            "Networking"
+        ],
+        "link": "#"
+    }
+]
