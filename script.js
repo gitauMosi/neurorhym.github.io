@@ -1,3 +1,10 @@
+// Mobile navbar toggle
+document.getElementById('navbarToggler')?.addEventListener('click', function () {
+    const nav = document.getElementById('navbarNav');
+    const isOpen = nav.classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen);
+});
+
 // Navbar scroll effect
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
