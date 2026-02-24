@@ -4,51 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects | NeuroRhym</title>
+    <title>Projects | NeuroRhym</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <style>
-        .projects-hero {
-            padding: 120px 0 80px;
-            background: linear-gradient(135deg, rgba(24, 24, 24, 0.95) 0%, rgba(34, 34, 34, 0.98) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-    </style>
 </head>
 
-<body>
-    <!-- Header Section -->
+<body class="projects-page">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">
-                    <img src="./assets/logo/neurorhym_logo.svg" alt="NeuroRhym - AI-Powered Software Solutions"
-                        height="40" class="d-inline-block align-text-top logo-gradient">
+                    <img src="./assets/logo/neurorhym_logo_white.svg" alt="NeuroRhym" height="40"
+                        class="d-inline-block align-text-top logo-gradient">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item ms-lg-3">
                             <a class="btn btn-primary rounded-pill px-4" href="index.html#contact">
-                                <i class="bi bi-chat-dots-fill me-1"></i>
-                                Get Started
+                                Book Consultation
                             </a>
                         </li>
                     </ul>
@@ -57,44 +35,48 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="projects-hero position-relative overflow-hidden">
-        <!-- Animated background elements -->
-        <div class="hero-shape-1"></div>
-        <div class="hero-shape-2"></div>
-
-        <div class="container position-relative z-1 text-center">
-            <h1 class="display-4 fw-bold mb-4 text-white">Our <span class="text-gradient">Innovation Portfolio</span>
-            </h1>
-            <p class="lead text-light-soft mx-auto mb-4" style="max-width: 700px;">
-                Explore the cutting-edge solutions we've crafted. From AI engines to secure cloud architectures,
-                see how NeuroRhym transforms ideas into reality.
-            </p>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <span class="badge bg-dark-soft px-4 py-2 rounded-pill">6 Projects</span>
-                <span class="badge bg-dark-soft px-4 py-2 rounded-pill">Multiple Technologies</span>
-                <span class="badge bg-dark-soft px-4 py-2 rounded-pill">Enterprise Grade</span>
+    <section class="projects-hero">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-7">
+                    <p class="eyebrow mb-3">SELECTED WORK</p>
+                    <h1 class="display-4 fw-bold text-white mb-3">Projects Built For Real Business Outcomes</h1>
+                    <p class="lead text-light-soft mb-0">A focused look at platforms, systems, and product delivery work
+                        for founders and growing teams.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="projects-hero-stats">
+                        <div class="projects-stat-card">
+                            <span>Delivery Model</span>
+                            <strong>Build + Advisory</strong>
+                        </div>
+                        <div class="projects-stat-card">
+                            <span>Typical Scope</span>
+                            <strong>Web, Systems, Scale</strong>
+                        </div>
+                        <div class="projects-stat-card">
+                            <span>Engagement</span>
+                            <strong>Project / Retainer</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Grid -->
-    <section class="py-5 bg-dark-mute">
+    <section class="projects-content pb-0">
         <div class="container">
-            <!-- Filter/Search (Optional for now, but good placeholder) -->
-            <!-- <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-light active">All</button>
-                        <button type="button" class="btn btn-outline-light">AI</button>
-                        <button type="button" class="btn btn-outline-light">Cloud</button>
-                        <button type="button" class="btn btn-outline-light">Web</button>
-                    </div>
+            <div class="projects-toolbar mb-4">
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="projects-chip">Custom Websites</span>
+                    <span class="projects-chip">Internal Systems</span>
+                    <span class="projects-chip">Automation</span>
+                    <span class="projects-chip">Consulting</span>
                 </div>
-            </div> -->
+                <a href="index.html#contact" class="btn btn-outline-light btn-sm">Discuss Your Project</a>
+            </div>
 
             <div id="projects-container" class="row g-4">
-                <!-- Projects will be injected here by JS -->
                 <div class="col-12 text-center py-5">
                     <div class="spinner-border text-primary" role="status">
                         <span class="visually-hidden">Loading...</span>
@@ -104,74 +86,59 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="projects-cta-section">
+        <div class="container">
+            <div class="projects-cta-box">
+                <h3 class="text-white mb-2">Need a Similar Build?</h3>
+                <p class="text-light-soft mb-0">Share your scope and timeline. We will propose the most practical next
+                    step.</p>
+                <a href="index.html#contact" class="btn btn-primary">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="py-5 border-top border-secondary footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <a class="navbar-brand fw-bold" href="index.html">
-                        <img src="./assets/logo/neurorhym_logo.svg" alt="NeuroRhym - AI-Powered Software Solutions"
-                            height="40" class="d-inline-block align-text-top logo-gradient">
+                        <img src="./assets/logo/neurorhym_logo_white.svg" alt="NeuroRhym" height="40"
+                            class="d-inline-block align-text-top logo-gradient">
                     </a>
-                    <a class="navbar-brand fw-bold mb-3 d-inline-block" href="index.html">
-                        <span class="text-gradient">NeuroRhym</span>
-                    </a>
-                    <p class="text-light-soft">
-                        Creating harmonious software solutions that sync with your business rhythm.
+                    <p class="text-light-soft mt-3">
+                        Software development and startup consultancy for founders who need execution.
                     </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-light-soft"><i class="bi bi-linkedin fs-5"></i></a>
-                        <a href="#" class="text-light-soft"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="text-light-soft"><i class="bi bi-github fs-5"></i></a>
-                    </div>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="text-white mb-3">Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html#services" class="text-light-soft text-decoration-none mb-2 d-block">AI
-                                Development</a></li>
-                        <li><a href="index.html#services"
-                                class="text-light-soft text-decoration-none mb-2 d-block">Cloud
-                                Solutions</a></li>
-                        <li><a href="index.html#services" class="text-light-soft text-decoration-none mb-2 d-block">Web
-                                Applications</a></li>
-                        <li><a href="index.html#services"
-                                class="text-light-soft text-decoration-none mb-2 d-block">Security</a>
+                        <li><a href="index.html#services" class="text-light-soft text-decoration-none mb-2 d-block">Build</a>
+                        </li>
+                        <li><a href="index.html#services" class="text-light-soft text-decoration-none mb-2 d-block">Advise</a>
+                        </li>
+                        <li><a href="index.html#services" class="text-light-soft text-decoration-none mb-2 d-block">Scale</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="text-white mb-3">Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html#about" class="text-light-soft text-decoration-none mb-2 d-block">About
-                                Us</a></li>
-                        <li><a href="#" class="text-light-soft text-decoration-none mb-2 d-block">Careers</a></li>
-                        <li><a href="#" class="text-light-soft text-decoration-none mb-2 d-block">Blog</a></li>
-                        <li><a href="index.html#contact"
-                                class="text-light-soft text-decoration-none mb-2 d-block">Contact</a>
-                        </li>
+                        <li><a href="index.html#about" class="text-light-soft text-decoration-none mb-2 d-block">About</a></li>
+                        <li><a href="index.html#contact" class="text-light-soft text-decoration-none mb-2 d-block">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 mb-4">
-                    <h5 class="text-white mb-3">Contact Info</h5>
+                    <h5 class="text-white mb-3">Contact</h5>
                     <ul class="list-unstyled">
-                        <li class="text-light-soft mb-2">
-                            <i class="bi bi-envelope me-2"></i>contact@neurorhym.com
-                        </li>
-                        <li class="text-light-soft mb-2">
-                            <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
-                        </li>
-                        <li class="text-light-soft">
-                            <i class="bi bi-geo-alt me-2"></i>San Francisco, CA
-                        </li>
+                        <li class="text-light-soft mb-2"><i class="bi bi-envelope me-2"></i>contact@neurorhym.com</li>
+                        <li class="text-light-soft mb-2"><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</li>
+                        <li class="text-light-soft"><i class="bi bi-geo-alt me-2"></i>United States</li>
                     </ul>
                 </div>
             </div>
             <div class="row pt-4 mt-4 border-top border-secondary">
                 <div class="col-md-6">
-                    <p class="text-light-soft small mb-0">
-                        &copy; 2024 NeuroRhym. All rights reserved.
-                    </p>
+                    <p class="text-light-soft small mb-0">&copy; 2026 NeuroRhym. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="text-light-soft small text-decoration-none me-3">Privacy Policy</a>
