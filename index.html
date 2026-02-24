@@ -4,33 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroRhym | Build, Advise, Scale</title>
+    <title>NeuroRhym | AI-Powered Software Solutions</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo/neurorhym_logo.svg">
-
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        /* Emergency inline fix */
+        .icon-wrapper img {
+            width: 30px !important;
+            height: 30px !important;
+            max-width: 30px !important;
+            max-height: 30px !important;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#home">
-                    <img src="./assets/logo/neurorhym_logo_orange.svg" alt="NeuroRhym" height="40"
-                        data-logo-orange="./assets/logo/neurorhym_logo_orange.svg"
-                        data-logo-white="./assets/logo/neurorhym_logo_white.svg"
-                        class="d-inline-block align-text-top logo-gradient nav-logo">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="./assets/logo/neurorhym_logo.svg" alt="NeuroRhym - AI-Powered Software Solutions"
+                        height="40" class="d-inline-block align-text-top logo-gradient">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solutions">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
                         <li class="nav-item ms-lg-3">
                             <a class="btn btn-primary rounded-pill px-4" href="#contact">
-                                Book Consultation
+                                <i class="bi bi-chat-dots-fill me-1"></i>
+                                Get Started
                             </a>
                         </li>
                     </ul>
@@ -57,44 +81,31 @@
                     <h1 class="display-3 fw-bold mb-4 text-white">
                         <span class="text-gradient">AI-Powered</span> Software Solutions That Sync with Your Vision
                     </h1>
-                    <p class="hero-subtitle mb-5">
-                        Collaborate with a practical software partner to deliver strategic websites and systems.
-                        We help early and growing teams turn complex ideas into scalable products.
+                    <p class="lead text-light-soft mb-5 fs-4">
+                        NeuroRhym delivers cutting-edge software services that harmonize technology with business needs.
+                        From custom development to AI integration, we create solutions that resonate with your goals.
                     </p>
-
-                    <div class="hero-service-links">
-                        <a href="#services" class="hero-service-link">
-                            <span>Custom Web Platforms</span>
-                            <i class="bi bi-arrow-up-right"></i>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow btn-hover-glow">
+                            Start Your Project
+                            <i class="bi bi-arrow-right ms-2 transition-all"></i>
                         </a>
-                        <a href="#services" class="hero-service-link">
-                            <span>Systems & Automation</span>
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <a href="#services" class="hero-service-link">
-                            <span>Advisory & Consultation</span>
-                            <i class="bi bi-arrow-up-right"></i>
+                        <a href="#solutions"
+                            class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 btn-hover-light">
+                            View Solutions
+                            <i class="bi bi-chevron-down ms-2 transition-all"></i>
                         </a>
                     </div>
-                </div>
 
-                <div class="col-lg-6">
-                    <div class="hero-visual-grid">
-                        <div class="hero-visual-card">
-                            <img src="assets/images/hero-1.png" alt="Development icon">
+                    <!-- Trust indicators -->
+                    <div class="trust-badges mt-6 pt-5">
+                        <p class="text-light-soft small mb-3">TRUSTED BY INDUSTRY LEADERS</p>
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="badge bg-dark-soft px-4 py-2 rounded-pill">Enterprise Ready</div>
+                            <div class="badge bg-dark-soft px-4 py-2 rounded-pill">24/7 Support</div>
+                            <div class="badge bg-dark-soft px-4 py-2 rounded-pill">ISO Certified</div>
+                            <div class="badge bg-dark-soft px-4 py-2 rounded-pill">GDPR Compliant</div>
                         </div>
-                        <div class="hero-visual-card">
-                            <img src="assets/images/hero-2.png" alt="Cloud icon">
-                        </div>
-                        <div class="hero-visual-card">
-                            <img src="assets/images/hero-3.png" alt="AI icon">
-                        </div>
-                        <div class="hero-visual-card">
-                            <img src="assets/images/hero-4.png" alt="Security icon">
-                        </div>
-                        <span class="hero-dot hero-dot-1"></span>
-                        <span class="hero-dot hero-dot-2"></span>
-                        <span class="hero-dot hero-dot-3"></span>
                     </div>
                 </div>
             </div>
@@ -109,55 +120,70 @@
         <div class="services-shape-3"></div>
 
         <div class="container position-relative z-1">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7">
-                    <h2 class="services-title mb-4">How We Can Help You</h2>
-                    <p class="services-intro mb-5">
-                        With a wide array of approaches and tools, there is no universal setup. Explore our services to
-                        discover how we can architect the ideal solution for your product workflows and long-term
-                        business goals.
-                    </p>
+            <!-- Section Header -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3 text-white">Our Core Services</h2>
+                    <p class="text-light-soft fs-5">Comprehensive software solutions tailored to drive your business
+                        forward with innovation and efficiency.</p>
+                </div>
+            </div>
 
-                    <div class="services-list" id="services-accordion">
-                        <div class="service-item">
-                            <button class="service-row service-toggle" type="button" aria-expanded="false">
-                                <span>Custom Website Development</span><i class="bi bi-plus-lg"></i>
-                            </button>
-                            <div class="service-panel">
-                                <p>We design and build conversion-focused websites tailored to your offer, audience, and
-                                    growth goals. Fast, responsive, and easy to manage.</p>
-                            </div>
+            <!-- Service Boxes -->
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card bg-dark-soft p-4 h-100">
+                        <div class="icon-wrapper bg-gradient-primary mb-4">
+                            <!-- Replace with your SVG icon -->
+                            <img src="/assets/icons/machine-learning-model-svgrepo-com.svg" alt="AI & Machine Learning"
+                                class="custom-icon">
                         </div>
+                        <h4 class="mb-3 text-white">AI & Machine Learning</h4>
+                        <p class="text-light-soft">Intelligent systems that learn, adapt, and optimize your business
+                            processes for maximum efficiency and innovation.</p>
+                    </div>
+                </div>
 
-                        <div class="service-item">
-                            <button class="service-row service-toggle" type="button" aria-expanded="false">
-                                <span>Systems & Automation</span><i class="bi bi-plus-lg"></i>
-                            </button>
-                            <div class="service-panel">
-                                <p>We create internal systems and workflow automations that remove repetitive work,
-                                    improve handoffs, and keep operations scalable.</p>
-                            </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card bg-dark-soft p-4 h-100">
+                        <div class="icon-wrapper bg-gradient-success mb-4">
+                            <!-- Replace with your SVG icon -->
+                            <img src="assets/icons/cloud-done-svgrepo-com.svg" alt="Cloud Solutions"
+                                class="custom-icon">
                         </div>
+                        <h4 class="mb-3 text-white">Cloud Solutions</h4>
+                        <p class="text-light-soft">Scalable cloud infrastructure and migration services ensuring
+                            reliability, security, and global accessibility.</p>
+                    </div>
+                </div>
 
-                        <div class="service-item">
-                            <button class="service-row service-toggle" type="button" aria-expanded="false">
-                                <span>Application Development</span><i class="bi bi-plus-lg"></i>
-                            </button>
-                            <div class="service-panel">
-                                <p>From MVPs to production products, we ship robust web applications with clear
-                                    architecture, maintainable code, and practical delivery cycles.</p>
-                            </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card bg-dark-soft p-4 h-100">
+                        <div class="icon-wrapper bg-gradient-danger mb-4">
+                            <!-- Replace with your SVG icon -->
+                            <img src="assets/icons/custom-coding.svg" alt="Custom Development" class="custom-icon">
                         </div>
+                        <h4 class="mb-3 text-white">Custom Development</h4>
+                        <p class="text-light-soft">Tailored software solutions from web applications to enterprise
+                            systems designed specifically for your needs.</p>
+                    </div>
+                </div>
 
-                        <div class="service-item">
-                            <button class="service-row service-toggle" type="button" aria-expanded="false">
-                                <span>Cloud Services</span><i class="bi bi-plus-lg"></i>
-                            </button>
-                            <div class="service-panel">
-                                <p>We set up scalable cloud infrastructure, deployment workflows, and monitoring so your
-                                    product stays reliable as usage grows.</p>
-                            </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card bg-dark-soft p-4 h-100">
+                        <div class="icon-wrapper bg-gradient-info mb-4">
+                            <!-- Replace with your SVG icon -->
+                            <img src="assets/icons/cybersecurity-two-tone-svgrepo-com.svg" alt="Cybersecurity"
+                                class="custom-icon">
                         </div>
+                        <h4 class="mb-3 text-white">Cybersecurity</h4>
+                        <p class="text-light-soft">Comprehensive security solutions protecting your digital assets with
+                            advanced threat detection and prevention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Solutions Section -->
     <section class="solutions-section py-7 position-relative" id="solutions">
@@ -181,91 +207,133 @@
                             <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
                             <span class="text-white">Seamless integration with existing systems</span>
                         </div>
-
-                        <div class="service-item">
-                            <button class="service-row service-toggle" type="button" aria-expanded="false">
-                                <span>Technology Advisory & Consultation</span><i class="bi bi-plus-lg"></i>
-                            </button>
-                            <div class="service-panel">
-                                <p>We support founders with stack decisions, scope clarity, and execution plans so teams
-                                    move faster with fewer expensive mistakes.</p>
-                            </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                            <span class="text-white">Continuous support and optimization</span>
                         </div>
                     </div>
+                    <a href="#contact" class="btn btn-outline-primary px-4 py-2 btn-hover-glow">
+                        Schedule a Demo
+                        <i class="bi bi-calendar-week ms-2 transition-all"></i>
+                    </a>
                 </div>
-
-                <div class="col-lg-5">
-                    <div class="services-visual-wrap">
-                        <img src="assets/images/hero-5.png" alt="Services illustration" class="services-visual-img">
+                <div class="col-lg-6">
+                    <div class="image-gallery">
+                        <div class="main-img bg-dark-soft p-4 rounded-3 shadow">
+                            <h5 class="text-gradient mb-3">Enterprise Dashboard</h5>
+                            <p class="text-light-soft small">Real-time monitoring and analytics platform</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">AI-Powered</span>
+                                <span class="badge bg-success">Cloud Native</span>
+                                <span class="badge bg-info">Secure</span>
+                            </div>
+                        </div>
+                        <div class="floating-img-1 bg-dark-soft p-3 rounded-3">
+                            <h6 class="text-white mb-2">Mobile App</h6>
+                            <p class="text-light-soft small mb-0">Cross-platform solution</p>
+                        </div>
+                        <div class="floating-img-2 bg-dark-soft p-3 rounded-3">
+                            <h6 class="text-white mb-2">API Integration</h6>
+                            <p class="text-light-soft small mb-0">Seamless connectivity</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section class="contact-section py-7 position-relative contact-ref" id="contact" data-nav-theme="blue">
+    <!-- About Section -->
+    <section class="about-section py-7 position-relative" id="about">
+        <!-- Animated background elements -->
+        <div class="about-shape-1"></div>
+        <div class="about-shape-2"></div>
+        <div class="about-shape-3"></div>
         <div class="container">
-            <div class="contact-ref-shell">
-                <div class="row g-4 align-items-stretch">
-                    <div class="col-lg-5">
-                        <div class="contact-side-panel">
-                            <p class="eyebrow mb-3">CONTACT</p>
-                            <h2 class="contact-ref-title">Start The Conversation</h2>
-                            <p class="contact-ref-subtitle">Share your scope, timeline, and constraints. We will reply with a practical next step.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4 text-white">Why Choose NeuroRhym?</h2>
+                    <p class="text-light-soft fs-5 mb-5">
+                        We're not just developers; we're innovation partners who understand that great software
+                        should have rhythm—it should flow smoothly, adapt to changes, and create harmony between
+                        technology and business objectives.
+                    </p>
 
-                            <div class="contact-side-list">
-                                <div class="contact-side-item">
-                                    <span class="contact-side-label">Email</span>
-                                    <strong>contact@neurorhym.com</strong>
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-wrapper bg-gradient-primary mx-auto mb-3">
+                                    <i class="bi bi-lightning-fill fs-4"></i>
                                 </div>
-                                <div class="contact-side-item">
-                                    <span class="contact-side-label">Phone</span>
-                                    <strong>+1 (555) 123-4567</strong>
+                                <h5 class="text-white mb-2">Rapid Deployment</h5>
+                                <p class="text-light-soft small">From concept to production in record time</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-wrapper bg-gradient-success mx-auto mb-3">
+                                    <i class="bi bi-people-fill fs-4"></i>
                                 </div>
-                                <div class="contact-side-item">
-                                    <span class="contact-side-label">Location</span>
-                                    <strong>United States</strong>
+                                <h5 class="text-white mb-2">Expert Team</h5>
+                                <p class="text-light-soft small">Seasoned professionals across all technologies</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-wrapper bg-gradient-info mx-auto mb-3">
+                                    <i class="bi bi-graph-up-arrow fs-4"></i>
                                 </div>
-                                <div class="contact-side-item">
-                                    <span class="contact-side-label">Response Time</span>
-                                    <strong>Within 24 hours</strong>
-                                </div>
+                                <h5 class="text-white mb-2">Proven Results</h5>
+                                <p class="text-light-soft small">Track record of successful implementations</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="col-lg-7">
-                        <div class="contact-form-card">
-                            <form class="contact-form contact-ref-form">
+    <!-- Contact Section -->
+    <section class="contact-section py-7 position-relative" id="contact">
+        <!-- Animated background elements -->
+        <div class="contact-shape-1"></div>
+        <div class="contact-shape-2"></div>
+        <div class="contact-shape-3"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4 text-white">Ready to Transform Your Business?</h2>
+                    <p class="text-light-soft fs-5 mb-5">
+                        Let's discuss how NeuroRhym can create the perfect software solution for your needs.
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form class="contact-form">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label class="form-label">First name</label>
-                                        <input type="text" class="form-control" name="first_name" placeholder="Francis" required>
+                                        <input type="text"
+                                            class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="Your Name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Last name</label>
-                                        <input type="text" class="form-control" name="last_name" placeholder="Maurine" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Job title</label>
-                                        <input type="text" class="form-control" name="job_title" placeholder="Founder">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Company</label>
-                                        <input type="text" class="form-control" name="company" placeholder="NeuroRhym">
+                                        <input type="email"
+                                            class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="Email Address" required>
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label">Work email</label>
-                                        <input type="email" class="form-control" name="email" placeholder="name@company.com" required>
+                                        <input type="text"
+                                            class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="Company Name">
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label">Project summary</label>
-                                        <textarea class="form-control" rows="5" name="message"
-                                            placeholder="Tell us what you want to build, current blockers, and target timeline." required></textarea>
+                                        <textarea class="form-control bg-transparent text-white border-secondary"
+                                            rows="4" placeholder="Tell us about your project..." required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                                        <button type="submit" class="btn btn-primary btn-lg w-100 py-3">
+                                            Get Your Free Consultation
+                                            <i class="bi bi-send ms-2"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -276,47 +344,70 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-5 border-top border-secondary footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <a class="navbar-brand fw-bold" href="#home">
-                        <img src="./assets/logo/neurorhym_logo_white.svg" alt="NeuroRhym" height="40"
-                            class="d-inline-block align-text-top logo-gradient">
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="./assets/logo/neurorhym_logo.svg" alt="NeuroRhym - AI-Powered Software Solutions"
+                            height="40" class="d-inline-block align-text-top logo-gradient">
                     </a>
-                    <p class="text-light-soft mt-3">Software development and startup consultancy for founders who need
-                        execution, not noise.</p>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4">
-                    <h5 class="text-white mb-3">Company</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#about" class="text-light-soft text-decoration-none mb-2 d-block">About</a></li>
-                        <li><a href="projects.html" class="text-light-soft text-decoration-none mb-2 d-block">Projects</a>
-                        </li>
-                        <li><a href="#contact" class="text-light-soft text-decoration-none mb-2 d-block">Contact</a>
-                        </li>
-                    </ul>
+                    <a class="navbar-brand fw-bold mb-3 d-inline-block" href="#">
+                        <span class="text-gradient">NeuroRhym</span>
+                    </a>
+                    <p class="text-light-soft">
+                        Creating harmonious software solutions that sync with your business rhythm.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light-soft"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-light-soft"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-light-soft"><i class="bi bi-github fs-5"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="text-white mb-3">Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Build</a></li>
-                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Advise</a></li>
-                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Scale</a></li>
+                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">AI
+                                Development</a></li>
+                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Cloud
+                                Solutions</a></li>
+                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Web
+                                Applications</a></li>
+                        <li><a href="#services" class="text-light-soft text-decoration-none mb-2 d-block">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light-soft text-decoration-none mb-2 d-block">About Us</a></li>
+                        <li><a href="#" class="text-light-soft text-decoration-none mb-2 d-block">Careers</a></li>
+                        <li><a href="#" class="text-light-soft text-decoration-none mb-2 d-block">Blog</a></li>
+                        <li><a href="#contact" class="text-light-soft text-decoration-none mb-2 d-block">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 mb-4">
-                    <h5 class="text-white mb-3">Contact</h5>
+                    <h5 class="text-white mb-3">Contact Info</h5>
                     <ul class="list-unstyled">
-                        <li class="text-light-soft mb-2"><i class="bi bi-envelope me-2"></i>contact@neurorhym.com</li>
-                        <li class="text-light-soft mb-2"><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</li>
-                        <li class="text-light-soft"><i class="bi bi-geo-alt me-2"></i>United States</li>
+                        <li class="text-light-soft mb-2">
+                            <i class="bi bi-envelope me-2"></i>contact@neurorhym.com
+                        </li>
+                        <li class="text-light-soft mb-2">
+                            <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                        </li>
+                        <li class="text-light-soft">
+                            <i class="bi bi-geo-alt me-2"></i>San Francisco, CA
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row pt-4 mt-4 border-top border-secondary">
                 <div class="col-md-6">
-                    <p class="text-light-soft small mb-0">&copy; 2026 NeuroRhym. All rights reserved.</p>
+                    <p class="text-light-soft small mb-0">
+                        &copy; 2024 NeuroRhym. All rights reserved.
+                    </p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="text-light-soft small text-decoration-none me-3">Privacy Policy</a>
@@ -325,6 +416,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1555123456?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <img src="./assets/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
